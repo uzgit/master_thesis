@@ -1,0 +1,60 @@
+\usepackage[margin=2.54cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+% \usepackage{layouts}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{float}
+% \usepackage{floatrow}
+% \usepackage{subfig}
+% \usepackage[colorlinks = true,
+%             urlcolor  = blue]{hyperref}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage[acronym]{glossaries}
+\usepackage{caption}
+\usepackage[en-US]{datetime2}
+% \usepackage[icelandic]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{caption}
+% \usepackage{subcaption}
+\usepackage[list=true,listformat=simple]{subcaption}
+\usepackage{courier}
+\usepackage{listings}
+\definecolor{lightlightgray}{rgb}{0.9, 0.9, 0.9}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstdefinestyle{C++}{language=C++,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{cyan}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#},
+                backgroundcolor = \color{lightlightgray},
+                float
+        }
+\lstdefinestyle{XML}
+{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type},% list your attributes here
+  backgroundcolor = \color{lightlightgray}
+}
+
+\usepackage{etaremune}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+% \usepackage{appendix}
+\usepackage[toc,page]{appendix}

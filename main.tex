@@ -1,0 +1,99 @@
+\documentclass[11pt,letterpaper,oneside]{book}
+
+\input{configuration/packages.tex}
+
+\title{Autonomous Landing of a Multicopter Using Computer Vision\\\vspace{0.5cm} \large Thesis of 30 ECTS submitted to the Department of Computer Science in partial fulfillment of the requirements for the degree of Master of Science in Computer Science}
+\author[ ]{Joshua Springer}
+% \DTMlangsetup{showdayofmonth=false}
+\date{\today}
+\affil[ ]{Reykjavík University; Department of Computer Science}
+\affil[ ]{Mälardalen University; School of Innovation, Design, and Engineering}
+
+\makeglossaries
+
+\renewcommand{\bibname}{References}
+
+\begin{document}
+
+\vbox
+{
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/ru_logo_transparent.png}
+    \maketitle
+}
+
+\chapter*{Acknowledgements}
+
+
+I would like to thank my family for their undying love, support, and encouragement which have gotten me this far.
+
+\vspace{0.5cm}\noindent
+My thanks go to Mälardalen University, Reykjavík University, and the Nordic Council, without whose generosity in the MDH Scholarship and the Nordic Master Programme, I would not have had the opportunity to study my passion in two wonderful countries.
+
+% \vspace{0.5cm}\noindent
+% Finally, I would like to thank the medical workers and everyone on the frontlines of the COVID-19 pandemic, who have put their lives on the line to help others. We are all indebted to you.
+
+% Þetta reddast
+
+% \vspace{5cm}
+% \begin{verse}
+% Do not go gentle into that good night,\\
+% Old age should burn and rave at close of day;\\
+% Rage, rage against the dying of the light.
+% \end{verse}
+
+\chapter*{Abstract}
+\input{sections/abstract}
+
+\tableofcontents
+\listoffigures
+
+\input{sections/glossary.tex}
+\printglossary
+\printglossary[type=\acronymtype]
+
+\chapter{Introduction}
+\section{Problem Statement and Motivation}
+\input{sections/problem_statement_and_motivation.tex}
+
+\section{Background}
+\input{sections/background.tex}
+
+\section{Related Work}
+\input{sections/related_works.tex}
+
+\section{Structure of this Thesis}
+\input{sections/thesis_structure}
+
+\chapter{Methods}
+\section{Landing System Requirements and Design Overview}
+\input{sections/requirements}
+
+\section{System Evaluation through Simulation}
+\input{sections/simulation.tex}
+
+\chapter{Simulation Results}
+\label{chapter:simulation_results}
+\input{sections/results}
+
+\chapter{Future Migration to a Physical System}
+\section{Hexacopter Design}
+\input{sections/hexacopter_design.tex}
+
+\section{Real World Testing}
+\input{sections/real_world_experiments.tex}
+
+\chapter{Conclusions}
+\input{sections/conclusions}
+
+% \chapter{Appendices}
+\appendix
+\chapter{Code Repositories}
+% \global\oneappendixfalse
+\input{sections/appendices}
+
+% \bibliographystyle{plain}
+\bibliographystyle{IEEEtran}
+\bibliography{sections/references}
+
+\end{document}
